@@ -31,6 +31,7 @@ html {
 body {
     background-color: var(--bgc-secundario);
     padding-right: 20px;
+    overflow-x: hidden;
     font-size: 24px;
     height: 100%;
     width: 100%;
@@ -66,6 +67,7 @@ blockquote {
 }
 
 header, footer {
+    overflow: hidden;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -83,6 +85,7 @@ footer {
 }
 
 main {
+    overflow: hidden;
     width: 100%;
 }
 
@@ -154,6 +157,7 @@ body header nav div:hover {
 /* Imagen Principal */
 .fondo {
     /* border: 1px solid black; */
+    overflow: hidden;
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -162,9 +166,10 @@ body header nav div:hover {
 
 .fondo img {
     position: relative;
-    top: -50px;
+    overflow: hidden;
     height: auto;
     width: 100%;
+    top: -50px;
 }
 
 
@@ -187,6 +192,7 @@ main {
 
 main .tema {
     /* margin: 25% 0; */
+    overflow-x: hidden;
     padding: 3% 0 0 0;
     min-height: 100vh;
     height: auto;
