@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+:root {
+    --bgc-primario: #FFFFFF;
+    --bgc-secundario: #DADADA90;
+    --bgc-nav: #FFFFFFA0;
+
+    --fsize-titulo: calc(130% + 5px);
+    --fsize-parrafo: 75%;
+
+    --color-titulo: #AF09BF;
+    --color-subtitulo: #303540;
+    --color-parrafo: #1f1f25;
+    --color-link: #303540;
+
+    --box-shadow-nav: 0px 4px 10px 0px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(255,255,255,0.6) inset;
+}
+
+/* Estilos generales */
+html {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--bgc-secundario);
+    padding-right: 20px;
+    font-size: 24px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+a {
+    color: var(--color-link);
+    font-size: var(--fsize-parrafo);
+}
+
+h1 {
+    font-size: var(--fsize-titulo);
+    color: var(--color-titulo);
+    text-align: center;
+}
+
+h4 {
+    font-size: calc(var(--fsize-titulo) - 5px);
+    color: var(--color-subtitulo);
+}
+
+p {
+    font-size: var(--fsize-parrafo);
+    color: var(--color-parrafo);
+    line-height: 170%;
+}
+
+header, footer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    left: 0;
+}
+
+header {
+    height: 8%;
+    top: -1px;
+}
+
+footer {
+    height: 15%;
+    bottom: 0;
+}
+
+main {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    /* background-color: var(--bgc-nav); */
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* ·········· Cuerpo ·········· */
+
+/* Cabecera */
+body header {
+    display: flex;
+    background-color: var(--bgc-nav);
+    box-shadow: var(--box-shadow-nav);
+    position: fixed;
+    padding: 7px 15px;
+    height: 8vh;
+    z-index: 3;
+}
+
+body header h1.nav-titulo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bolder;
+    cursor: pointer;
+    width: 10%;
+    padding: 0;
+    margin: 0;
+}
+
+body header nav {
+    width: 90%;
+}
+
+body header nav div {
+    /* border: 1px solid black; */
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 2%;
+    height: 100%;
+    width: 100%;
+}
+
+body header nav div a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+}
+
+body header nav div:hover {
+    background-color: var(--bgc-secundario);
+    /* box-shadow: 0 0 5px #202020; */
+    opacity: .8;
+}
+
+/* Imagen Principal */
+.fondo {
+    /* border: 1px solid black; */
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.fondo img {
+    position: relative;
+    top: -50px;
+    height: auto;
+    width: 100%;
+}
+
+
+/* Contenido principal */
+main {
+    display: flex;
+    background-color: var(--bgc-primario);
+    box-shadow: 0 0 30px 1px rgba(0,0,0,0.1);
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 0;
+    padding: 50px;
+    margin: 0 10%;
+    height: auto;
+    width: 80%;
+    top: 100vh;
+    z-index: 2;
+}
+
+main .tema {
+    /* margin: 25% 0; */
+    padding: 3% 0 0 0;
+    min-height: 100vh;
+    height: auto;
+}
+
+main .tema dl * {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+}
+
+main .tema dl dt {
+    text-align: center;
+    font-weight: 800;
+    font-size: 100%;
+}
+
+main .tema dl dd {
+    text-align: left;
+}
+
+main > * {
+    margin: 1rem 0 0 0;
+    height: auto;
+}
+
+main > *:first-child {
+    margin: 0;
+}
+
+/* ? Pie de página */

@@ -1,0 +1,21 @@
+aside {
+    position: relative;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Rectangulo a la izquierda */
+aside.izquierda {
+    /* background-color: var(--bgc-secundario); */
+    /* color: var(--color-secundario); */
+    border-right: 1px dashed black;
+    position: fixed;
+    height: 100%;
+    float: left;
+    z-index: 1;
+    width: 8%;
+    left: 0;
+    top: 0;
+}
