@@ -55,10 +55,14 @@ h4 {
     color: var(--color-subtitulo);
 }
 
-p {
+p, blockquote {
     font-size: var(--fsize-parrafo);
     color: var(--color-parrafo);
     line-height: 170%;
+}
+
+blockquote {
+    font-style: italic;
 }
 
 header, footer {
